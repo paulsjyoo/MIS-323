@@ -1,0 +1,75 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button22.jpg', /*url*/'button23.jpg', /*url*/'button24.jpg', /*url*/'button25.jpg', /*url*/'button26.jpg', /*url*/'button27.jpg', /*url*/'button29.jpg', /*url*/'button2A.jpg', /*url*/'button2C.jpg', /*url*/'button2D.jpg')">
+
+<p align="center">&nbsp;&nbsp;<font color="#008000" size="6" face="Verdana">Tickets</font></p>
+<p align="center">&nbsp;<a href="index.htm"><img border="0" id="img18" src="button1F.jpg" height="50" width="152" alt="Home" onmouseover="FP_swapImg(1,0,/*id*/'img18',/*url*/'button22.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img18',/*url*/'button1F.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img18',/*url*/'button23.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img18',/*url*/'button22.jpg')" fp-style="fp-btn: Embossed Tab 2; fp-font: Verdana; fp-font-style: Bold; fp-font-size: 24" fp-title="Home"></a><a href="about.htm"><img border="0" id="img19" src="button28.jpg" height="50" width="152" alt="About" onmouseover="FP_swapImg(1,0,/*id*/'img19',/*url*/'button24.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img19',/*url*/'button28.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img19',/*url*/'button25.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img19',/*url*/'button24.jpg')" fp-style="fp-btn: Embossed Tab 2; fp-font: Verdana; fp-font-style: Bold; fp-font-size: 24" fp-title="About"></a><a href="tickets.htm"><img border="0" id="img20" src="button30.jpg" height="50" width="152" alt="Tickets" onmouseover="FP_swapImg(1,0,/*id*/'img20',/*url*/'button26.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img20',/*url*/'button30.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img20',/*url*/'button27.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img20',/*url*/'button26.jpg')" fp-style="fp-btn: Embossed Tab 2; fp-font: Verdana; fp-font-style: Bold; fp-font-size: 24" fp-title="Tickets"></a></p>
+<p align="center">
+<a href="faq.htm">
+<img border="0" id="img21" src="button31.jpg" height="50" width="152" alt="FAQ" onmouseover="FP_swapImg(1,0,/*id*/'img21',/*url*/'button29.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img21',/*url*/'button31.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img21',/*url*/'button2A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img21',/*url*/'button29.jpg')" fp-style="fp-btn: Embossed Tab 2; fp-font: Verdana; fp-font-style: Bold; fp-font-size: 24" fp-title="FAQ"></a><a href="contact.htm"><img border="0" id="img22" src="button2B.jpg" height="50" width="152" alt="Contact" onmouseover="FP_swapImg(1,0,/*id*/'img22',/*url*/'button2C.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img22',/*url*/'button2B.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img22',/*url*/'button2D.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img22',/*url*/'button2C.jpg')" fp-style="fp-btn: Embossed Tab 2; fp-font: Verdana; fp-font-style: Bold; fp-font-size: 24" fp-title="Contact"></a></p>
+<p align="center"><font face="Verdana" color="#008000">Tickets can be bought at our office in the New 
+Union, Room 320.</font><p align="center"><font face="Verdana" color="#008000">We only accept cash as payment and we do request a Binghamton ID card of the ticket purchaser.</font><p align="center">
+<font face="Verdana" color="#008000">All tickets are Non-Exchangeable and Non-Refundable upon leaving the ESCAPE Office.</font><p align="center">
+<font face="Verdana" color="#008000">Regular Weekend buses leave campus for 
+Huntington, Fresh Meadows and Manhattan at 3pm on Fridays</font><p align="center">
+<font face="Verdana" color="#008000">Regular Weekend buses return Sunday evenings from</font><p align="center" style="margin-top: 0px">
+<font face="Verdana" color="#008000">Huntington at 6:00pm, Fresh Meadows at 6:30pm, and Manhattan at 7:30pm.</font><p align="center">
+<font face="Verdana" color="#008000">Disclaimer: ESCAPE is NOT liable for lost items
+</font>
+<center><font face="Verdana" color="#008000"><br><B>HOLIDAY DESTINATIONS INCLUDE:</B>
+<br>Manhattan: 31st St. & 8th Avenue (outside of Penn Station & Madison Square Garden)
+<br>Fresh Meadows: 190th St. & LIE Service Road (Fresh Meadows Movie theater, near K-mart)
+<br>Huntington: 350 Rte. 110 (Toys R Us)
+<br>Smithtown: Smith Haven Mall, Stern's Parking Area
+<br>The Bronx: Fordham Plaza, Parking Area Behind Sears
+<br>White Plains Metro North Station, Ferris Ave
+<br>Brooklyn: Kings Plaza, Outdoor Parking Lot & Avenue U
+<br>Staten Island: Staten Island Hotel, Richmond Avenue 
+<br><br><B>Message to BU Parents:</B>
+            ESCAPE has been a part of student life at Binghamton University for over 30 years. We take pride in providing an essential service to hundreds of BU students and hope to continue to offer the most affordable 
+and convenient charter bus service for many years to come. ESCAPE is diligently working towards securing a new arrival/departure point in Nassau County. Many of ESCAPE’s initial attempts to find a new location in Nassau over the past year have been unsuccessful. Recently, ESCAPE has begun to work closely with Binghamton University administration in hopes of finding a solution. We have greatly appreciated the many suggestions and ideas offered by countless students and parents. We have never stopped working towards a solution and with the help of BU’s administration; we hope to be returning to Nassau County in the near future.
+            Please check this website for continued updates over the course of the semester. If you have any questions feel free to call our office at (607) 
+699- 1287 or e-mail us at <a href="mailto:info@escape.binghamtonsa.org">info@escape.binghamtonsa.org</a> Thank you for your continued support and patronage. 
+ 
+<br><br><b>ESCAPE’s Bus Cancelation Policy:
+</b>
+            As a not-for-profit student organization, ESCAPE does not run buses that are not filled to near capacity. We ask that students come to our office to purchase tickets early in the week so we can determine the likelihood of running our weekend service. If the bus is cancelled, students are notified by phone two days before their scheduled departure and are issued a full refund. This is the only condition under which ESCAPE offers full refunds for its service. 
+ESCAPE will do everything in its power to keep our buses running, but we simply cannot afford to operate our service without the proper demand. If you have any questions feel free to call our office at (607) 
+699- 1287 or e-mail us at <a href="mailto:info@escape.binghamtonsa.org">info@escape.binghamtonsa.org</a>. We thank you for your understanding and your continued patronage.
+ 
+Greyhound and Shortline tickets can also be purchased through out office at a 5% Student Discount at varying prices, depending on the desired destination. 
+College Express tickets will also soon be available.</font></p>
+
+</body>
+
+</html>
